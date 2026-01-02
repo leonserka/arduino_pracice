@@ -2,7 +2,6 @@
 
 This repository contains a collection of **Arduino lab exercises** created as part of the **Microcontroller Programming and Embedded Systems** course.  
 Each `.ino` file represents an independent lab task focused on learning sensors, actuators, control logic, and basic automation.  
-Future updates include a complete **Solar Tracking Project** and additional practice sketches.
 
 ---
 
@@ -18,8 +17,10 @@ All exercises are implemented in **C/C++ using the Arduino IDE**.
 
 - 🔌 **Digital & Analog I/O** – reading sensors and controlling outputs  
 - 💡 **LED and Button Control** – digital pin operations and debounce handling  
-- 🌡️ **Sensors** – temperature, light, and distance sensors  
-- ⚙️ **Servo & Motor Control** – PWM and position control logic  
+- 🌡️ **Sensors** – temperature, light, and distance sensors
+- 📟 **Displays** – controlling LCD 16x2 screens and 7-segment displays
+- ⚙️ **Servo & Motor Control** – PWM and position control logic
+- 📶 **Bluetooth Communication** – Wireless control and data transfer using HC-05/HC-06 modules
 - ⏱️ **Timing and Delays** – using `delay()` and `millis()` for control flow  
 - 🔁 **Loops & Conditional Logic** – automation and real-time responses  
 - 🔊 **Buzzer & Sound** – generating tones for notifications  
@@ -32,20 +33,45 @@ All exercises are implemented in **C/C++ using the Arduino IDE**.
 ```
 arduino-practice/
 ├── practice1/                         # Basic Arduino labs
-│   ├── L2Z1Serka.ino                  # Basic LED and button control
-│   ├── L2Z2Serka.ino                  # Sensor input and serial monitor output
-│   ├── L2Z3Serka.ino                  # Conditional logic and actuator control
-│   ├── L2Z4Serka.ino                  # PWM signal demonstration
-│   ├── L2Z5Serka.ino                  # Simple automation example
+│   ├── L2Z1Serka.ino                  # Basic LED blink
+│   ├── L2Z2Serka.ino                  # SOS Morse code signal
+│   ├── L2Z3Serka.ino                  # Morse code name display ("Leon Serka")
+│   ├── L2Z4Serka.ino                  # Serial monitor "Hello World"
+│   ├── L2Z5Serka.ino                  # Simulated weather station (Serial output)
 │
 ├── practice2/                         # Intermediate labs
-│   ├── L3Z1LeonSerka.ino              # Intermediate practice – sensor combination
-│   ├── L3Z2LeonSerka.ino              # Temperature or distance-based control
-│   ├── L3Z4LeonSerka.ino              # Multi-sensor data handling
+│   ├── L3Z1LeonSerka.ino              # PWM LED brightness control
+│   ├── L3Z2LeonSerka.ino              # Fading LED with power calculations
+│   ├── L3Z4LeonSerka.ino              # LED Chaser / Running light effect
 │
-├── practice3_advanced/                # Advanced labs
-│   ├── L40Z1-Z3LeonSerka.ino          # Extended exercises with timing and events
-│   ├── L40Z4-Z5LeonSerka.ino          # Advanced control structure demo
+├── practice3/                         # Advanced Inputs
+│   ├── L40Z1-Z3LeonSerka.ino          # Button counter logic
+│   ├── L40Z4-Z5LeonSerka.ino          # Potentiometer mapping to PWM output
+│
+├── practice4/                         # Repetition & Reinforcement
+│   ├── L40Z1-Z3LeonSerka.ino          # (Review) Digital inputs
+│   ├── L40Z4-Z5LeonSerka.ino          # (Review) Analog inputs
+│
+├── practice5_6/                       # Motors & Actuators
+│   └── L6Z4SerkaLeon.ino              # Servo motor sweep sequence (90°-120°-60°)
+│
+├── practice7/                         # Display Technologies
+│   ├── L7Z2LeonSerka.ino              # 7-Segment display multiplexing
+│   ├── L7Z3LeonSerka.ino              # 7-Segment speed control via Potentiometer
+│   ├── L7Z5LeonSerka.ino              # LCD 16x2 text scrolling ("Leon Serka")
+│
+├── practice8_9/                       # Advanced Sensors & Environment
+│   ├── L8Z5LeonSerka.ino              # Battery Voltage Monitor (0-15V) with warnings
+│   ├── L9Z2LeonSerka.ino              # DHT11 Temperature & Humidity Reading
+│   ├── L9Z4LeonSerka.ino              # "Clothing Advisor" logic based on Temperature
+│   ├── L9Z5LeonSerka.ino              # Scrolling weather info on LCD
+│
+├── practice11/                        # Wireless Communication (Bluetooth)
+│   ├── L11Z1LeonSerka.ino             # Bluetooth LED Control (On/Off)
+│   ├── L11Z3LeonSerka.ino             # Bluetooth Command Handling
+│   ├── L11Z7LeonSerka.ino             # Sending incrementing data to Smartphone
+│   ├── L11Z9LeonSerka.ino             # Displaying Bluetooth messages on LCD
+│   └── L11Z11LeonSerka.ino            # Wireless Humidity Monitor (DHT to Bluetooth)
 │
 ├── solar_tracker/                     # Future project
 │   └── (to be added)                  # Solar tracking system files
@@ -133,7 +159,6 @@ The solar tracking system is built using the following components:
 ## 🚧 Upcoming Additions
 
 - 🌞 **Solar Tracking Project** – automatic sunlight tracking using LDR sensors  
-- 💡 Additional practice exercises for advanced control and automation  
 
 ---
 
