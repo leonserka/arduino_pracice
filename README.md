@@ -66,6 +66,14 @@ arduino-practice/
 │   ├── L9Z4LeonSerka.ino              # "Clothing Advisor" logic based on Temperature
 │   ├── L9Z5LeonSerka.ino              # Scrolling weather info on LCD
 │
+├── Practice10/                        # LCD & Serial Communication
+│   ├── L10Z1LeonSerka.ino             # LCD basic usage
+│   ├── L10Z2LeonSerka.ino             # LCD advanced features
+│   ├── L10Z3LeonSerka.ino             # LCD with sensors
+│   ├── L10Z5LeonSerka.ino             # Distance sensor with LCD display
+│   ├── L10Z6LeonSerka.ino             # LCD data visualization
+│   └── L10Z7LeonSerka.ino             # PIN verification system (LCD + Serial Monitor)
+│
 ├── practice11/                        # Wireless Communication (Bluetooth)
 │   ├── L11Z1LeonSerka.ino             # Bluetooth LED Control (On/Off)
 │   ├── L11Z3LeonSerka.ino             # Bluetooth Command Handling
